@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video-column {
+    flex-basis: calc(33.33% - 70px); /* Adjust for gutter spacing */
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+/* Optional: Styling for iframe videos */
+iframe {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+}
